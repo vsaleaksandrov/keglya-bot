@@ -34,7 +34,7 @@ run().then(res => {
 
 const app = async () => {
     const client = await new tmi.Client({
-        options: { debug: true },
+        // options: { debug: true },
         identity: {
             username: BOT_USER_NAME,
             password: `oauth:${TOKEN}`
