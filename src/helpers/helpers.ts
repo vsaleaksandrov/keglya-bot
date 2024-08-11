@@ -18,6 +18,7 @@ export const getChampionNameText = (champion: typeof Champion): string => {
 	const CHAMPION_NAME: Map<string, string> = new Map([
 		["FIZZ", "за Физа"],
 		["NAAFIRI", "за Нафири"],
+		["TALON", "за Талона"],
 	])
 
 	return CHAMPION_NAME.get(champion);

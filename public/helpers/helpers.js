@@ -19,6 +19,7 @@ var getChampionNameText = function (champion) {
     var CHAMPION_NAME = new Map([
         ["FIZZ", "за Физа"],
         ["NAAFIRI", "за Нафири"],
+        ["TALON", "за Талона"],
     ]);
     return CHAMPION_NAME.get(champion);
 };
