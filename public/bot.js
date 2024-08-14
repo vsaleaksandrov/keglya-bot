@@ -80,7 +80,7 @@ var app = function () { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0: return [4 /*yield*/, new tmi.Client({
-                    // options: { debug: true },
+                    options: { debug: true },
                     identity: {
                         username: BOT_USER_NAME,
                         password: "oauth:".concat(TOKEN)
@@ -97,6 +97,7 @@ var app = function () { return __awaiter(void 0, void 0, void 0, function () {
                     return __generator(this, function (_b) {
                         switch (_b.label) {
                             case 0:
+                                console.log(tags);
                                 if (self || !message.startsWith('!'))
                                     return [2 /*return*/];
                                 command = message

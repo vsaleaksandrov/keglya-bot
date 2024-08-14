@@ -34,7 +34,7 @@ run().then(res => {
 
 const app = async () => {
     const client = await new tmi.Client({
-        // options: { debug: true },
+        options: { debug: true },
         identity: {
             username: BOT_USER_NAME,
             password: `oauth:${TOKEN}`
@@ -45,6 +45,7 @@ const app = async () => {
     await client.connect();
 
     client.on('message', async (channel, tags, message, self) => {
+        console.log(tags)
         if (self || !message.startsWith('!')) return;
         const command = message
           .slice(1)
